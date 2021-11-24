@@ -1,15 +1,12 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
@@ -19,48 +16,12 @@ import Smiles from '../smilesn.png'
 import netLogo from '../netlogo.png'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-const Search = styled('div')(({ theme }) => ({
-  position: 'relative',
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  '&:hover': {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
-  width: '100%',
-  [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(3),
-    width: 'auto',
-  },
-}));
 
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: '100%',
-  position: 'absolute',
-  pointerEvents: 'none',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'inherit',
-  '& .MuiInputBase-input': {
-    padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
-    },
-  },
-}));
 
 const styles = {
   navigationBar:{
-    background:"#141414"
+    background:"#141414",
+    height:68
   },
   smiles:{
     width:30,
@@ -72,16 +33,24 @@ const styles = {
     fontSize:20
   },
   logo:{
-    width:95,
+    width:93,
     marginTop:5
   },
   mLeft:{
     marginLeft:35,
-    marginRight:30
+    marginRight:35
   },
   menuItems:{
     fontSize:14,
-    marginTop:5
+    marginTop:5.7,
+    paddingLeft:4,
+    color:"#e5e5e5",
+  },
+  menuFirst:{
+    marginLeft:26,fontSize:14,marginTop:5,color:"white",fontWeight:"bold",
+  },
+  links:{
+    textDecoration:"none"
   }
 }
 
@@ -188,12 +157,12 @@ export default function PrimarySearchAppBar() {
       <AppBar style = {styles.navigationBar} position="static">
         <Toolbar style = {styles.mLeft}>
             <img alt = "logo" src = {netLogo} style = {styles.logo}/>
-      <MenuItem style = {{marginLeft:25,fontSize:14,marginTop:5}}>Anasayfa</MenuItem>
+     <Link style = {styles.links} to = "/"> <MenuItem style = {styles.menuFirst}>Ana Sayfa</MenuItem> </Link>
       <MenuItem style = {styles.menuItems}>Yeniden İzle</MenuItem>
       <MenuItem style = {styles.menuItems}>Diziler</MenuItem>
       <MenuItem style = {styles.menuItems}>Filmler</MenuItem>
       <MenuItem style = {styles.menuItems}>Yeni ve Popüler</MenuItem>
-      <MenuItem style = {styles.menuItems}>Listem</MenuItem>
+     <Link style = {styles.links} to = "/mylist"> <MenuItem style = {styles.menuItems}>Listem</MenuItem> </Link>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
