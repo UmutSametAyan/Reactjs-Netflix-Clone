@@ -1,9 +1,8 @@
 import React from 'react'
 
-export default function Mylist() {
+export default function Newpopular() {
     return (
         <div>
-            <h2>listkenk</h2>
             <p>asdasdasd</p>
          <p>asdasdasd</p>
          <p>asdasdasd</p>

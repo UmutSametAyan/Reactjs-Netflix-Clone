@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -21,12 +21,13 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 const styles = {
   navigationBar:{
     background:"#141414",
-    height:68
+    height:68,
+    boxShadow:"none"
   },
   smiles:{
-    width:30,
+    width:32,
     borderRadius:5,
-    marginLeft:10
+    marginTop:5
   },
   IconDown:{
     marginLeft:3,
@@ -38,19 +39,25 @@ const styles = {
   },
   mLeft:{
     marginLeft:35,
-    marginRight:35
+    marginRight:32
   },
   menuItems:{
     fontSize:14,
-    marginTop:5.7,
-    paddingLeft:4,
-    color:"#e5e5e5",
+    paddingLeft:21,
   },
   menuFirst:{
-    marginLeft:26,fontSize:14,marginTop:5,color:"white",fontWeight:"bold",
+    marginLeft:44,fontSize:14,color:"#e5e5e5"
   },
   links:{
-    textDecoration:"none"
+    textDecoration:"none",
+    paddingTop:4
+  },
+  badge:{
+  marginTop:7,
+
+  },
+  notifications:{
+  fontSize:28,
   }
 }
 
@@ -132,7 +139,7 @@ export default function PrimarySearchAppBar() {
           color="inherit"
         >
           <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
+            <NotificationsIcon  />
           </Badge>
         </IconButton>
         <p>Notifications</p>
@@ -155,31 +162,31 @@ export default function PrimarySearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar style = {styles.navigationBar} position="static">
-        <Toolbar style = {styles.mLeft}>
-            <img alt = "logo" src = {netLogo} style = {styles.logo}/>
-     <Link style = {styles.links} to = "/"> <MenuItem style = {styles.menuFirst}>Ana Sayfa</MenuItem> </Link>
-      <MenuItem style = {styles.menuItems}>Yeniden İzle</MenuItem>
-      <MenuItem style = {styles.menuItems}>Diziler</MenuItem>
-      <MenuItem style = {styles.menuItems}>Filmler</MenuItem>
-      <MenuItem style = {styles.menuItems}>Yeni ve Popüler</MenuItem>
-     <Link style = {styles.links} to = "/mylist"> <MenuItem style = {styles.menuItems}>Listem</MenuItem> </Link>
+        <Toolbar className = "m-left" style = {styles.mLeft}>
+            <img className = "logo" alt = "logo" src = {netLogo} style = {styles.logo}/>
+     <NavLink to = "/" activeClassName = "active" className = "menu-item" style = {styles.links} > <span style = {styles.menuFirst}>Ana Sayfa</span> </NavLink>
+     <NavLink to = "/watchagain"  activeClassName = "active"  className = "menu-item" style = {styles.links}>  <span style = {styles.menuItems}>Yeniden İzle</span> </NavLink>
+     <NavLink to = "/Series"  activeClassName = "active" style = {styles.links}> <span  className = "menu-item" style = {styles.menuItems}>Diziler</span> </NavLink>
+     <NavLink to = "/Films"  activeClassName = "active" style = {styles.links}> <span  className = "menu-item" style = {styles.menuItems}>Filmler</span> </NavLink>
+     <NavLink to = "/Newpopular"  activeClassName = "active" style = {styles.links}> <span  className = "menu-item" style = {styles.menuItems}>Yeni ve Popüler</span> </NavLink>
+     <NavLink to = "/mylist"  activeClassName = "active"  className = "menu-item" style = {styles.links} > <span style = {styles.menuItems}>Listem</span> </NavLink>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge  color="error">
-                <SearchIcon />
+                <SearchIcon style = {{marginTop:7}} />
               </Badge>
             </IconButton>
             <IconButton>
-              <span style = {{color:"white",fontSize:14}}>Çocuk</span>
+              <span style = {{color:"white",fontSize:14,marginTop:6}}>Çocuk</span>
               </IconButton>
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
             >
-              <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
+              <Badge style = {styles.badge} badgeContent={17} color="error">
+                <NotificationsIcon style = {styles.notifications} />
               </Badge>
             </IconButton>
             <IconButton
