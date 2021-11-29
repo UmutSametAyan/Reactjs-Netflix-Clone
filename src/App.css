@@ -11,6 +11,41 @@
 body{
     background:#141414;
 }
+.movie-slides{
+    box-shadow: 3px 3px 3px 0px black inset, -3px -3px 3px 1px black inset;
+    width:97%;
+    height:20vh;
+    border-radius: 2px;
+    margin-left:-10px;
+    overflow: hidden !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.styles-module_carousel-base__3keqD {
+    margin-top: 1.5%;
+    margin-left: 4%;
+    width:96% !important;
+}
+
+.arrow-left{
+    color:white;
+    font-size: 40px !important;
+    position: absolute;
+    z-index: 5;
+    top:50px;
+    left:-48px;
+}
+.arrow-right{
+    color:white;
+    font-size: 40px !important;
+    position: absolute;
+    top:50px;
+    left:-40px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
     .menu-item {
       display: none !important;

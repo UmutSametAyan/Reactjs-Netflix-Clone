@@ -1,0 +1,354 @@
+[
+    {
+        "Title": "Spider-Man: Far from Home",
+        "Year": "2019",
+        "Rated": "PG-13",
+        "Released": "02 Jul 2019",
+        "Runtime": "129 min",
+        "Genre": "Action, Adventure, Sci-Fi",
+        "Director": "Jon Watts",
+        "Writer": "Chris McKenna, Erik Sommers, Stan Lee",
+        "Actors": "Tom Holland, Samuel L. Jackson, Jake Gyllenhaal",
+        "Plot": "Following the events of Avengers: Endgame (2019), Spider-Man must step up to take on new threats in a world that has changed forever.",
+        "Language": "English, Italian, Czech",
+        "Country": "United States",
+        "Awards": "10 wins & 26 nominations",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BOWI3MDIzZmYtN2Y3MC00YTljLWFiYmYtNWIzMjg1ZWQ1ODlhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.4/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "90%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "69/100"
+            }
+        ],
+        "Metascore": "69",
+        "imdbRating": "7.4",
+        "imdbVotes": "390,580",
+        "imdbID": "tt6320628",
+        "Type": "movie",
+        "DVD": "27 Aug 2019",
+        "BoxOffice": "$390,532,085",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Fight Club",
+        "Year": "1999",
+        "Rated": "R",
+        "Released": "15 Oct 1999",
+        "Runtime": "139 min",
+        "Genre": "Drama",
+        "Director": "David Fincher",
+        "Writer": "Chuck Palahniuk, Jim Uhls",
+        "Actors": "Brad Pitt, Edward Norton, Meat Loaf",
+        "Plot": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+        "Language": "English",
+        "Country": "Germany, United States",
+        "Awards": "Nominated for 1 Oscar. 11 wins & 38 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.8/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "79%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "66/100"
+            }
+        ],
+        "Metascore": "66",
+        "imdbRating": "8.8",
+        "imdbVotes": "1,958,640",
+        "imdbID": "tt0137523",
+        "Type": "movie",
+        "DVD": "14 Oct 2003",
+        "BoxOffice": "$37,030,102",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Transformers",
+        "Year": "2007",
+        "Rated": "PG-13",
+        "Released": "03 Jul 2007",
+        "Runtime": "144 min",
+        "Genre": "Action, Adventure, Sci-Fi",
+        "Director": "Michael Bay",
+        "Writer": "Roberto Orci, Alex Kurtzman, John Rogers",
+        "Actors": "Shia LaBeouf, Megan Fox, Josh Duhamel",
+        "Plot": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager.",
+        "Language": "English, Spanish",
+        "Country": "United States",
+        "Awards": "Nominated for 3 Oscars. 25 wins & 50 nominations total",
+        "Poster": "https://cdn.europosters.eu/image/750/posters/transformers-head-to-head-i3160.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.0/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "58%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "61/100"
+            }
+        ],
+        "Metascore": "61",
+        "imdbRating": "7.0",
+        "imdbVotes": "615,658",
+        "imdbID": "tt0418279",
+        "Type": "movie",
+        "DVD": "16 Oct 2007",
+        "BoxOffice": "$319,246,193",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Purge",
+        "Year": "2010",
+        "Rated": "Not Rated",
+        "Released": "12 Feb 2013",
+        "Runtime": "80 min",
+        "Genre": "Drama, Sci-Fi",
+        "Director": "David King",
+        "Writer": "David King",
+        "Actors": "Greg Anderson, Alyssa Bassett, Sarah Breen",
+        "Plot": "A genetically-engineered world. All Layla wanted was to fit in and be happy. But her nemesis wouldn't let her.",
+        "Language": "English",
+        "Country": "Australia",
+        "Awards": "N/A",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjQwOTk1NjA5N15BMl5BanBnXkFtZTgwNjQ5Nzc0NDE@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "2.9/10"
+            }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "2.9",
+        "imdbVotes": "1,557",
+        "imdbID": "tt1557843",
+        "Type": "movie",
+        "DVD": "09 Nov 2016",
+        "BoxOffice": "N/A",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "V for Vendetta",
+        "Year": "2005",
+        "Rated": "R",
+        "Released": "17 Mar 2006",
+        "Runtime": "132 min",
+        "Genre": "Action, Drama, Sci-Fi",
+        "Director": "James McTeigue",
+        "Writer": "Lilly Wachowski, Lana Wachowski, David Lloyd",
+        "Actors": "Hugo Weaving, Natalie Portman, Rupert Graves",
+        "Plot": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of \"V,\" plots to overthrow it with the help of a young woman.",
+        "Language": "English",
+        "Country": "United States, United Kingdom, Germany",
+        "Awards": "7 wins & 29 nominations",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "73%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "62/100"
+            }
+        ],
+        "Metascore": "62",
+        "imdbRating": "8.1",
+        "imdbVotes": "1,073,556",
+        "imdbID": "tt0434409",
+        "Type": "movie",
+        "DVD": "01 Aug 2006",
+        "BoxOffice": "$70,511,035",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "8 Mile",
+        "Year": "2002",
+        "Rated": "R",
+        "Released": "08 Nov 2002",
+        "Runtime": "110 min",
+        "Genre": "Drama, Music",
+        "Director": "Curtis Hanson",
+        "Writer": "Scott Silver",
+        "Actors": "Eminem, Brittany Murphy, Kim Basinger",
+        "Plot": "A young rapper, struggling with every aspect of his life, wants to make it big but his friends and foes make this odyssey of rap harder than it may seem.",
+        "Language": "English",
+        "Country": "United States, Germany",
+        "Awards": "Won 1 Oscar. 15 wins & 21 nominations total",
+        "Poster": "https://wallpapercave.com/wp/0aXnbxO.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "75%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "77/100"
+            }
+        ],
+        "Metascore": "77",
+        "imdbRating": "7.1",
+        "imdbVotes": "268,608",
+        "imdbID": "tt0298203",
+        "Type": "movie",
+        "DVD": "18 Mar 2003",
+        "BoxOffice": "$116,750,901",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "V for Vendetta",
+        "Year": "2005",
+        "Rated": "R",
+        "Released": "17 Mar 2006",
+        "Runtime": "132 min",
+        "Genre": "Action, Drama, Sci-Fi",
+        "Director": "James McTeigue",
+        "Writer": "Lilly Wachowski, Lana Wachowski, David Lloyd",
+        "Actors": "Hugo Weaving, Natalie Portman, Rupert Graves",
+        "Plot": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of \"V,\" plots to overthrow it with the help of a young woman.",
+        "Language": "English",
+        "Country": "United States, United Kingdom, Germany",
+        "Awards": "7 wins & 29 nominations",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "73%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "62/100"
+            }
+        ],
+        "Metascore": "62",
+        "imdbRating": "8.1",
+        "imdbVotes": "1,073,556",
+        "imdbID": "tt0434409",
+        "Type": "movie",
+        "DVD": "01 Aug 2006",
+        "BoxOffice": "$70,511,035",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "V for Vendetta",
+        "Year": "2005",
+        "Rated": "R",
+        "Released": "17 Mar 2006",
+        "Runtime": "132 min",
+        "Genre": "Action, Drama, Sci-Fi",
+        "Director": "James McTeigue",
+        "Writer": "Lilly Wachowski, Lana Wachowski, David Lloyd",
+        "Actors": "Hugo Weaving, Natalie Portman, Rupert Graves",
+        "Plot": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of \"V,\" plots to overthrow it with the help of a young woman.",
+        "Language": "English",
+        "Country": "United States, United Kingdom, Germany",
+        "Awards": "7 wins & 29 nominations",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "73%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "62/100"
+            }
+        ],
+        "Metascore": "62",
+        "imdbRating": "8.1",
+        "imdbVotes": "1,073,556",
+        "imdbID": "tt0434409",
+        "Type": "movie",
+        "DVD": "01 Aug 2006",
+        "BoxOffice": "$70,511,035",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "V for Vendetta",
+        "Year": "2005",
+        "Rated": "R",
+        "Released": "17 Mar 2006",
+        "Runtime": "132 min",
+        "Genre": "Action, Drama, Sci-Fi",
+        "Director": "James McTeigue",
+        "Writer": "Lilly Wachowski, Lana Wachowski, David Lloyd",
+        "Actors": "Hugo Weaving, Natalie Portman, Rupert Graves",
+        "Plot": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of \"V,\" plots to overthrow it with the help of a young woman.",
+        "Language": "English",
+        "Country": "United States, United Kingdom, Germany",
+        "Awards": "7 wins & 29 nominations",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "73%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "62/100"
+            }
+        ],
+        "Metascore": "62",
+        "imdbRating": "8.1",
+        "imdbVotes": "1,073,556",
+        "imdbID": "tt0434409",
+        "Type": "movie",
+        "DVD": "01 Aug 2006",
+        "BoxOffice": "$70,511,035",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    }
+]
