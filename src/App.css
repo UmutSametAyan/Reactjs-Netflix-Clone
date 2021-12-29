@@ -3,32 +3,36 @@
     margin:0;
     box-sizing:border-box;
 }
+body{
+    background:#141414;
+}
 .active{
     color:white !important;
     font-weight: bold !important;
 
 }
-body{
-    background:#141414;
-}
+
 .movie-slides{
     box-shadow: 3px 3px 3px 0px black inset, -3px -3px 3px 1px black inset;
     width:97%;
     height:20vh;
     border-radius: 2px;
-    margin-left:-10px;
+    margin-left:-10px;    /* slide ekle */
     overflow: hidden !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.styles-module_carousel-base__3keqD {
-    margin-top: 1.5%;
+.half-width{
+    margin-top: 1%;
     margin-left: 4%;
     width:96% !important;
 }
-
+.full-width{
+    margin-top: 1%;
+    width:100% !important;
+}
 .arrow-left{
     color:white;
     font-size: 40px !important;
@@ -36,6 +40,10 @@ body{
     z-index: 5;
     top:50px;
     left:-48px;
+}
+.arrow-left:hover{
+    display:block !important;
+    cursor:pointer;
 }
 .arrow-right{
     color:white;
