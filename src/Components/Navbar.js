@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{useState,useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -22,7 +22,14 @@ const styles = {
   navigationBar:{
     background:"#141414",
     height:68,
-    boxShadow:"none"
+    transition:"1s",
+    boxShadow:"none",
+  },
+  navigationBarOnScroll:{
+    background:"transparent",
+    height:68,
+    transition:"1s",
+    boxShadow:"none",
   },
   smiles:{
     width:32,
@@ -68,6 +75,9 @@ export default function PrimarySearchAppBar() {
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
+  const [offset, setOffset] = useState(0);
+  const [offsetController,setOffSetController] = useState(false);
+
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -84,6 +94,18 @@ export default function PrimarySearchAppBar() {
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
+
+  useEffect(() =>{
+    isScroll();
+  })
+
+  const isScroll = () =>{
+    window.onscroll = () => {
+      setOffset(window.pageYOffset)
+    }
+    offset > 1 ? setOffSetController(true) : setOffSetController(false);
+    console.log(offsetController)
+  }
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
@@ -161,7 +183,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar style = {styles.navigationBar} position="static">
+      <AppBar style = {!offsetController ?  styles.navigationBarOnScroll : styles.navigationBar} position="fixed">
         <Toolbar className = "m-left" style = {styles.mLeft}>
             <img className = "logo" alt = "logo" src = {netLogo} style = {styles.logo}/>
      <NavLink to = "/" activeClassName = "active" className = "menu-item" style = {styles.links} > <span style = {styles.menuFirst}>Ana Sayfa</span> </NavLink>

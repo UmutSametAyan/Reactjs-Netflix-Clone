@@ -7,21 +7,12 @@ export default function Home() {
         color: "white", fontFamily: "sans-serif", fontSize: "20px", marginLeft: "4%",marginTop:"1rem" 
     }
     const movieSlideFilter = [
-        {movieType:"popularfilms",title:"Netflix'te Popüler"},
+        {movieType:"popularfilms",title:"Net flix'te Popüler"},
         {movieType:"2005",title:"2005 filmleri"},
     ];
     return (
-        <div>
-
+        <div className='Home'>
             <Jumbotron/>
-            {/* <div>
-                <p style={nameStyles}>Netflix'te Popüler</p>
-                <Slider dataProps = {Movies.filter(i => i.Popular === "popularfilms")}/>
-            </div>
-            <div>
-            <p style={nameStyles}>Netflix'te Popüler</p>
-            <Slider dataProps = {Movies.filter(i => i.Year === "2005")}/>
-            </div> */}
             <div> 
                 {movieSlideFilter.map(movieFilter =>{
                     return(
