@@ -48,16 +48,16 @@ const styles = {
     marginLeft:35,
     marginRight:32
   },
-  menuItems:{
-    fontSize:14,
-    paddingLeft:21,
-  },
+
   menuFirst:{
-    marginLeft:44,fontSize:14,color:"#e5e5e5"
+    marginLeft:25,fontSize:14,color:"#e5e5e5"
   },
   links:{
     textDecoration:"none",
-    paddingTop:4
+    paddingTop:5,
+    fontSize:14,
+    paddingLeft:21,
+    color:"#e5e5e5"
   },
   badge:{
   marginTop:7,
@@ -68,7 +68,7 @@ const styles = {
   }
 }
 
-export default function PrimarySearchAppBar() {
+export default function PrimarySearchAppBar(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -104,7 +104,6 @@ export default function PrimarySearchAppBar() {
       setOffset(window.pageYOffset)
     }
     offset > 1 ? setOffSetController(true) : setOffSetController(false);
-    console.log(offsetController)
   }
 
   const menuId = 'primary-search-account-menu';
@@ -186,12 +185,18 @@ export default function PrimarySearchAppBar() {
       <AppBar style = {!offsetController ?  styles.navigationBarOnScroll : styles.navigationBar} position="fixed">
         <Toolbar className = "m-left" style = {styles.mLeft}>
             <img className = "logo" alt = "logo" src = {netLogo} style = {styles.logo}/>
-     <NavLink to = "/" activeClassName = "active" className = "menu-item" style = {styles.links} > <span style = {styles.menuFirst}>Ana Sayfa</span> </NavLink>
-     <NavLink to = "/watchagain"  activeClassName = "active"  className = "menu-item" style = {styles.links}>  <span style = {styles.menuItems}>Yeniden İzle</span> </NavLink>
-     <NavLink to = "/Series"  activeClassName = "active" style = {styles.links}> <span  className = "menu-item" style = {styles.menuItems}>Diziler</span> </NavLink>
-     <NavLink to = "/Films"  activeClassName = "active" style = {styles.links}> <span  className = "menu-item" style = {styles.menuItems}>Filmler</span> </NavLink>
-     <NavLink to = "/Newpopular"  activeClassName = "active" style = {styles.links}> <span  className = "menu-item" style = {styles.menuItems}>Yeni ve Popüler</span> </NavLink>
-     <NavLink to = "/mylist"  activeClassName = "active"  className = "menu-item" style = {styles.links} > <span style = {styles.menuItems}>Listem</span> </NavLink>
+            {props.account.length !== 0 ? 
+            <React.Fragment>
+            <React.Fragment>
+     <NavLink to = "/" activeClassName = "active"  style = {styles.links} > <span style = {styles.menuFirst}>Ana Sayfa</span> </NavLink>
+     <NavLink to = "/watchagain"  activeClassName = "active"   style = {styles.links}> Yeniden İzle </NavLink>
+     <NavLink to = "/Series"  activeClassName = "active" style = {styles.links}> Diziler </NavLink>
+     <NavLink to = "/Films"  activeClassName = "active" style = {styles.links}> Filmler </NavLink>
+     <NavLink to = "/Newpopular"  activeClassName = "active" style = {styles.links}> Yeni ve Popüler </NavLink>
+     <NavLink to = "/mylist"  activeClassName = "active" style = {styles.links} >Listem </NavLink>
+     </React.Fragment>
+
+     <React.Fragment>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
@@ -220,7 +225,7 @@ export default function PrimarySearchAppBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <img alt = "auth" style = {styles.smiles} src = {Smiles} />
+              <img alt = "auth" style = {styles.smiles} src = {props.account.image} />
               <KeyboardArrowDownIcon style = {styles.IconDown}/>
 
             </IconButton>
@@ -237,6 +242,10 @@ export default function PrimarySearchAppBar() {
               <MoreIcon />
             </IconButton>
           </Box>
+          </React.Fragment>
+          </React.Fragment>
+     : null }
+
         </Toolbar>
       </AppBar>
       {renderMobileMenu}

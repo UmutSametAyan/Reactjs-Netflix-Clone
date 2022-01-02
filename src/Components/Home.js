@@ -7,7 +7,7 @@ export default function Home() {
         color: "white", fontFamily: "sans-serif", fontSize: "20px", marginLeft: "4%",marginTop:"1rem" 
     }
     const movieSlideFilter = [
-        {movieType:"popularfilms",title:"Net flix'te Popüler"},
+        {movieType:"popularfilms",title:"Netlix'te Popüler"},
         {movieType:"2005",title:"2005 filmleri"},
     ];
     return (

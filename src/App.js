@@ -1,5 +1,5 @@
 import './App.css';
-// import React,{useState} from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
@@ -9,13 +9,17 @@ import Watchagain from './Components/Watchagain';
 import Series from './Components/Series';
 import Films from './Components/Films';
 import Newpopular from './Components/Newpopular';
+import Whoiswatching from './Components/Whoiswatching';
 function App() {
+  const [account,setAccount] = useState([]);
+  console.log(account);
   return (
 
       <Router>
-  <Navbar/>
+        
+  <Navbar account = {account}/>
 <Routes>
-  <Route path="/" element = {<Home/>}/>
+  <Route path="/" element = {account.length !== 0 ?  <Home/> : <Whoiswatching account = {acc => setAccount(acc)}/>}/>
   <Route path="/mylist" element = {<Mylist/>}/>
   <Route path= "/watchagain" element = {<Watchagain/>}/>
   <Route path= "/Series" element = {<Series/>}/>
