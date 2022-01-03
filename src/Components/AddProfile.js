@@ -45,16 +45,15 @@ export default function AddProfile() {
         },
     
         chck:{
-           width:"37px",
-           height:"37px",
-           color:"red",
+           width:"30px",
+           height:"30px",
            border:"none",
            outline:"none",
         },
         child:{
             color:"white",
-            fontSize:"1.5rem",
-            marginLeft:"-20px",
+            fontSize:"1.3rem",
+            marginLeft:"-25px",
         },
         main:{
             display:"flex",
@@ -65,11 +64,12 @@ export default function AddProfile() {
             marginBottom:"3%"
         },
         input:{
-            width:"420px",
+            width:"360px",
             background:"#666666",
             borderRadius:"0px",
             outline:"none",
-            height:"4.7vh",
+            height:"5.5vh",
+            marginLeft:"-10px",
             color:"white"
         },
         enters3:{
