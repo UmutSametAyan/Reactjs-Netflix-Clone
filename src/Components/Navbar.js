@@ -188,12 +188,12 @@ export default function PrimarySearchAppBar(props) {
             {props.account.length !== 0 ? 
             <React.Fragment>
             <React.Fragment>
-     <NavLink to = "/" activeClassName = "active"  style = {styles.links} > <span style = {styles.menuFirst}>Ana Sayfa</span> </NavLink>
-     <NavLink to = "/watchagain"  activeClassName = "active"   style = {styles.links}> Yeniden İzle </NavLink>
-     <NavLink to = "/Series"  activeClassName = "active" style = {styles.links}> Diziler </NavLink>
-     <NavLink to = "/Films"  activeClassName = "active" style = {styles.links}> Filmler </NavLink>
-     <NavLink to = "/Newpopular"  activeClassName = "active" style = {styles.links}> Yeni ve Popüler </NavLink>
-     <NavLink to = "/mylist"  activeClassName = "active" style = {styles.links} >Listem </NavLink>
+     <NavLink className = "menu-item" to = "/" activeClassName = "active"  style = {styles.links} > <span style = {styles.menuFirst}>Ana Sayfa</span> </NavLink>
+     <NavLink className = "menu-item" to = "/watchagain"  activeClassName = "active"   style = {styles.links}> Yeniden İzle </NavLink>
+     <NavLink className = "menu-item" to = "/Series"  activeClassName = "active" style = {styles.links}> Diziler </NavLink>
+     <NavLink className = "menu-item" to = "/Films"  activeClassName = "active" style = {styles.links}> Filmler </NavLink>
+     <NavLink className = "menu-item" to = "/Newpopular"  activeClassName = "active" style = {styles.links}> Yeni ve Popüler </NavLink>
+     <NavLink className = "menu-item" to = "/mylist"  activeClassName = "active" style = {styles.links} >Listem </NavLink>
      </React.Fragment>
 
      <React.Fragment>

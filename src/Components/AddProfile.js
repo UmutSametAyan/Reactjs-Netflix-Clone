@@ -76,7 +76,7 @@ export default function AddProfile() {
             <br/>
             <div style = {styles.hr}> </div>
             <div style = {styles.main}>
-            <img className='acc-pic-two' width="120" alt="accounts" src={Smiles}></img>
+            <img className='acc-pic-two' width="22%" alt="accounts" src={Smiles}></img>
             <input placeholder='Adı' style = {styles.input} type = "text" />
             <input style = {styles.chck} type = "checkbox" />
             <p style = {styles.child}>Çocuk</p>

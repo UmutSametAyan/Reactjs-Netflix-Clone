@@ -47,6 +47,8 @@ body{
 .full-width{
     margin-top: 1%;
     width:100% !important;
+    overflow: hidden !important;
+
 }
 .arrow-left{
     color:white;
@@ -58,7 +60,7 @@ body{
     padding-left: 10px;
     font-size: 50px !important;
     background-color: rgba(0,0,0,0.5);
-    height: 19vh !important;
+    height: 20vh !important;
 }
 .arrow-left:hover{
     display:block !important;
@@ -66,7 +68,7 @@ body{
 }
 .arrow-right{
     background-color: rgba(0,0,0,0.5);
-    height: 19vh !important;
+    height: 20vh !important;
     color:white;
     font-size: 40px !important;
     position: absolute;
@@ -95,20 +97,20 @@ body{
   }
   .who-watch-all{
       position: absolute;
-      top: 30.5%;
-      left: 26.5%;
+      top: 27.5%;
+      left: 27%;
       color: white;
   }
  .who-watch{
      display: flex;
-     gap: 1.9rem;
+     gap: 2rem;
      flex-wrap: wrap;
      margin-top: 4.5%;
      width: 100%;
  }
  .acc-pic{
      border-radius: 6px;
-     height: 21vh;
+     height: 19vh;
      cursor: pointer;
      object-fit: cover;
  }
@@ -120,18 +122,18 @@ body{
  }
  .who-watch-text{
      text-align: center;
-     font-size: 3.2rem;
+     font-size: 3.5rem;
      font-weight: 500;
  }
  .who-text{
      text-align: center;
-     font-size: 1.3rem;
+     font-size: 1.5rem;
      color: #808080;
-     margin-top: 2%;
+     margin-top: 4%;
  }
 .add-profile{
-    width: 156px;
-    height: 156px;
+    width: 115%;
+    height: 18.5vh;
     position: relative;
     cursor: pointer;
     border-radius: 6px;
@@ -140,13 +142,14 @@ body{
     background: #E5E5E5;
 }
 .add-icon{
-    margin-left:15px !important;
-    margin-top: 8%;
+    margin-left:25px !important;
+    margin-top: 15%;
     font-size: 8rem !important;
-   color: #808080;
+    color: #808080;
 }
 .ptext{
-    margin-top: 6.5%;
+    margin-top: 9%;
+    margin-left: 15.5%;
 }
 .new-profile{
     position: absolute;

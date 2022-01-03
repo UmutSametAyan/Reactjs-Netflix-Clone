@@ -20,7 +20,7 @@ export default function Whoiswatching(props) {
                 {props.accounts.map(acc => {
                     return (
                         <div>
-                            <div onClick={() => handleAccountSelect(acc.name, acc.picture)}> <img className='acc-pic' width="160" alt="accounts" src={acc.picture}></img> </div>
+                            <div onClick={() => handleAccountSelect(acc.name, acc.picture)}> <img className='acc-pic' width="100%" alt="accounts" src={acc.picture}></img> </div>
                             <p class="who-text">{acc.name}</p>
                         </div>
                     )
