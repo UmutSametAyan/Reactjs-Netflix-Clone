@@ -11,8 +11,18 @@ import Films from './Components/Films';
 import Newpopular from './Components/Newpopular';
 import Whoiswatching from './Components/Whoiswatching';
 function App() {
-  const [account,setAccount] = useState([]);
-  console.log(account);
+ 
+  const isLocalStorage = () => {
+    const AccountInfo = JSON.parse(localStorage.getItem('AccountInfo'));
+    if(AccountInfo){
+      return AccountInfo
+    }
+    else{
+      return [];
+    }
+  }
+
+  const [account,setAccount] = useState(isLocalStorage());
   return (
 
       <Router>

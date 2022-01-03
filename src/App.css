@@ -71,10 +71,9 @@ body{
     font-size: 40px !important;
     position: absolute;
     top:3px;
-    font-size: 90px !important;
-
-    left:-90px;
-    padding: 26px;
+    padding: 5px;
+    font-size: 50px !important;
+    left:-50px;
     cursor: pointer;
 }
 
@@ -113,6 +112,12 @@ body{
      cursor: pointer;
      object-fit: cover;
  }
+ .acc-pic-two{
+    border-radius: 6px;
+    height: 16vh;
+    cursor: pointer;
+    object-fit: cover;
+ }
  .who-watch-text{
      text-align: center;
      font-size: 3.2rem;
@@ -143,3 +148,24 @@ body{
 .ptext{
     margin-top: 6.5%;
 }
+.new-profile{
+    position: absolute;
+    left:30%;
+    top:25%;
+    width: 40%;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  ::placeholder {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
