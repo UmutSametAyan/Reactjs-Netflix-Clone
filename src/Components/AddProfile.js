@@ -1,8 +1,8 @@
 import React from 'react'
 import Smiles from '../smilesn.png'
-import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
-import { fontFamily } from '@mui/system';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import { fontWeight } from '@mui/system';
 export default function AddProfile() {
     const styles = {
         heading:{
@@ -14,13 +14,7 @@ export default function AddProfile() {
             color:"#666666",
             fontSize:"1.3rem"
         },
-        main:{
-            display:"flex",
-            justifyContent:"space-between",
-            alignItems:"center",
-            marginTop:"3.5%",
-            marginBottom:"3.5%"
-        },
+     
         hr:{
            height:1,
            background:"#333333"
@@ -49,23 +43,38 @@ export default function AddProfile() {
             textTransform:"none",
             fontWeight:"bold"
         },
-        input:{
-            background:"#808080",
-            outline:"none",
-            height:"5.5vh",
-            border:"none",
-            width:"58%"
-        },
+    
         chck:{
-           width:"35px",
-           height:"35px",
+           width:"37px",
+           height:"37px",
            color:"red",
            border:"none",
            outline:"none",
-           background:"background: rgba(0, 0, 0, 0);"
         },
         child:{
+            color:"white",
+            fontSize:"1.5rem",
+            marginLeft:"-20px",
+        },
+        main:{
+            display:"flex",
+            flexWrap:"wrap",
+            gap:"2rem",
+            alignItems:"center",
+            marginTop:"3%",
+            marginBottom:"3%"
+        },
+        input:{
+            width:"420px",
+            background:"#666666",
+            borderRadius:"0px",
+            outline:"none",
+            height:"4.7vh",
             color:"white"
+        },
+        enters3:{
+            marginLeft:"-15px",
+            marginTop:"5px"
         }
     }
     return (
@@ -76,9 +85,18 @@ export default function AddProfile() {
             <br/>
             <div style = {styles.hr}> </div>
             <div style = {styles.main}>
-            <img className='acc-pic-two' width="22%" alt="accounts" src={Smiles}></img>
-            <input placeholder='Adı' style = {styles.input} type = "text" />
+                <div>
+            <img className='acc-pic-two' alt="accounts" src={Smiles}></img>
+            </div>
+            <div >
+            <OutlinedInput
+            style = {styles.input}
+            placeholder =  {"Adı"}
+          />
+            </div>
+            <div style = {styles.enters3}>
             <input style = {styles.chck} type = "checkbox" />
+            </div>
             <p style = {styles.child}>Çocuk</p>
             </div>
             <div style = {styles.hr}></div>
