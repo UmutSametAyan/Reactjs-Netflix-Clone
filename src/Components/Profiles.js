@@ -1,5 +1,6 @@
 import React from 'react'
 import AddCircleSharpIcon from '@mui/icons-material/AddCircleSharp';
+import { width } from '@mui/system';
 
 
 
@@ -16,11 +17,13 @@ export default function Whoiswatching(props) {
     return (
         <div className='who-watch-all'>
             <h2 className="who-watch-text">Kim İzliyor?</h2>
+            <br/>
+            <br/>
             <div className='who-watch'>
                 {props.accounts.map(acc => {
                     return (
                         <div>
-                            <div onClick={() => handleAccountSelect(acc.name, acc.picture)}> <img className='acc-pic' width="100%" alt="accounts" src={acc.picture}></img> </div>
+                            <div onClick={() => handleAccountSelect(acc.name, acc.picture)}> <img className='acc-pic'  alt="accounts" src={acc.picture}></img> </div>
                             <p class="who-text">{acc.name}</p>
                         </div>
                     )

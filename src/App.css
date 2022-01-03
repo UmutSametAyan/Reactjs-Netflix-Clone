@@ -79,7 +79,19 @@ body{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px){
+  .who-text{
+      font-size: 1.2rem !important;
+  }
+  .acc-pic{
+    border-radius: 6px;
+    height: 25vh !important;
+    cursor: pointer;
+    object-fit: cover;
+}
+}
+@media only screen and (max-width: 767px) {
+ 
     .menu-item {
       display: none !important;
     }
@@ -96,17 +108,15 @@ body{
     color:#e5e5e5;
   }
   .who-watch-all{
-      position: absolute;
-      top: 27.5%;
-      left: 27%;
-      color: white;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15%;
   }
  .who-watch{
      display: flex;
-     gap: 2rem;
+     justify-content: center;
+     gap: 2.5rem;
      flex-wrap: wrap;
-     margin-top: 4.5%;
-     width: 100%;
  }
  .acc-pic{
      border-radius: 6px;
@@ -124,6 +134,7 @@ body{
      text-align: center;
      font-size: 3.5rem;
      font-weight: 500;
+     color:white;
  }
  .who-text{
      text-align: center;
