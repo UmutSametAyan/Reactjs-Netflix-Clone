@@ -133,9 +133,10 @@ body{
      color:white;
  }
 .new-profile{
- width: 41%;
+ width: 44%;
  margin: 0 auto;
- margin-top: 11.5%;
+ margin-top: 10%;
+ padding: 20px;
 }
 
 .add-profile{
@@ -146,6 +147,7 @@ body{
     color: #4E4E4E;
     padding: 10px 25px;
     border-radius: 6px;
+    cursor: pointer;
 }
 .add-profile:hover{
     background-color: #E5E5E5;
@@ -158,4 +160,29 @@ body{
     font-size: 20px;
     margin-top: 5%;
     text-align: center;
+}
+.profile-bar{
+    position: absolute;
+    width: 190px;
+    top:75px;
+    right:17px;
+    background-color: black;
+}
+.list-li{
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: start;
+}
+.list-ul{
+    list-style: none;
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: #4B4744;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.sec{
+    padding-top: 12px;
 }

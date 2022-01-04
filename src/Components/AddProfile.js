@@ -2,7 +2,6 @@ import React from 'react'
 import Smiles from '../smilesn.png'
 import Button from '@mui/material/Button';
 import OutlinedInput from '@mui/material/OutlinedInput';
-import { fontWeight } from '@mui/system';
 export default function AddProfile() {
     const styles = {
         heading:{
@@ -17,7 +16,8 @@ export default function AddProfile() {
      
         hr:{
            height:1,
-           background:"#333333"
+           background:"#333333",
+           width:"98%"
         },
         btns:{
             display:"flex",
@@ -60,8 +60,8 @@ export default function AddProfile() {
             flexWrap:"wrap",
             gap:"2rem",
             alignItems:"center",
-            marginTop:"3%",
-            marginBottom:"3%"
+            marginTop:"4%",
+            marginBottom:"4%"
         },
         input:{
             width:"360px",

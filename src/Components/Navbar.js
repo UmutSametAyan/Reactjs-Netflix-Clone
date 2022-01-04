@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -14,119 +14,105 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import netLogo from '../netlogo.png'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import NavList from './NavList';
 
 
 
 const styles = {
-  navigationBar:{
-    background:"#141414",
-    height:68,
-    transition:"1s",
-    boxShadow:"none",
+  navigationBar: {
+    background: "#141414",
+    height: 68,
+    transition: "1s",
+    boxShadow: "none",
   },
-  navigationBarOnScroll:{
-    background:"transparent",
-    height:68,
-    transition:"1s",
-    boxShadow:"none",
+  navigationBarOnScroll: {
+    background: "transparent",
+    height: 68,
+    transition: "1s",
+    boxShadow: "none",
   },
-  smiles:{
-    width:32,
-    borderRadius:5,
-    marginTop:5
+  smiles: {
+    width: 32,
+    borderRadius: 5,
+    marginTop: 5
   },
-  IconDown:{
-    marginLeft:3,
-    fontSize:20
+  IconDown: {
+    marginLeft: 3,
+    fontSize: 20
   },
-  logo:{
-    width:93,
-    marginTop:5
+  logo: {
+    width: 93,
+    marginTop: 5
   },
-  mLeft:{
-    marginLeft:35,
-    marginRight:32
+  mLeft: {
+    marginLeft: 35,
+    marginRight: 32
   },
 
-  menuFirst:{
-    marginLeft:25,fontSize:14,color:"#e5e5e5"
+  menuFirst: {
+    marginLeft: 25, fontSize: 14, color: "#e5e5e5"
   },
-  links:{
-    textDecoration:"none",
-    paddingTop:5,
-    fontSize:14,
-    paddingLeft:21,
-    color:"#e5e5e5"
+  links: {
+    textDecoration: "none",
+    paddingTop: 5,
+    fontSize: 14,
+    paddingLeft: 21,
+    color: "#e5e5e5"
   },
-  badge:{
-  marginTop:7,
+  badge: {
+    marginTop: 7,
 
   },
-  notifications:{
-  fontSize:28,
+  notifications: {
+    fontSize: 28,
   }
 }
 
 export default function PrimarySearchAppBar(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(false);
 
-  const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
   const [offset, setOffset] = useState(0);
-  const [offsetController,setOffSetController] = useState(false);
+  const [offsetController, setOffSetController] = useState(false);
 
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
+
+  const handleHover = (event) => {
+    setAnchorEl(true)
+    console.log(anchorEl)
+  }
+
+  const removeHover = () =>{
+    setAnchorEl(false);
+    console.log(anchorEl)
+  }
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
   };
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
+
 
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
- 
-  useEffect(() =>{
+
+  useEffect(() => {
     isScroll();
   })
 
-  const isScroll = () =>{
+  const isScroll = () => {
     window.onscroll = () => {
       setOffset(window.pageYOffset)
     }
     offset > 1 ? setOffSetController(true) : setOffSetController(false);
   }
 
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
+
+
+
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
@@ -160,12 +146,12 @@ export default function PrimarySearchAppBar(props) {
           color="inherit"
         >
           <Badge badgeContent={17} color="error">
-            <NotificationsIcon  />
+            <NotificationsIcon />
           </Badge>
         </IconButton>
         <p>Notifications</p>
       </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
+      <MenuItem>
         <IconButton
           size="large"
           aria-label="account of current user"
@@ -182,74 +168,73 @@ export default function PrimarySearchAppBar(props) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar style = {!offsetController ?  styles.navigationBarOnScroll : styles.navigationBar} position="fixed">
-        <Toolbar className = "m-left" style = {styles.mLeft}>
-            <img className = "logo" alt = "logo" src = {netLogo} style = {styles.logo}/>
-            {props.account.length !== 0 ? 
+      <AppBar style={!offsetController ? styles.navigationBarOnScroll : styles.navigationBar} position="fixed">
+        <Toolbar className="m-left" style={styles.mLeft}>
+          <img className="logo" alt="logo" src={netLogo} style={styles.logo} />
+          {props.account.length !== 0 ?
             <React.Fragment>
-            <React.Fragment>
-     <NavLink className = "menu-item" to = "/" activeClassName = "active"  style = {styles.links} > <span style = {styles.menuFirst}>Ana Sayfa</span> </NavLink>
-     <NavLink className = "menu-item" to = "/watchagain"  activeClassName = "active"   style = {styles.links}> Yeniden İzle </NavLink>
-     <NavLink className = "menu-item" to = "/Series"  activeClassName = "active" style = {styles.links}> Diziler </NavLink>
-     <NavLink className = "menu-item" to = "/Films"  activeClassName = "active" style = {styles.links}> Filmler </NavLink>
-     <NavLink className = "menu-item" to = "/Newpopular"  activeClassName = "active" style = {styles.links}> Yeni ve Popüler </NavLink>
-     <NavLink className = "menu-item" to = "/mylist"  activeClassName = "active" style = {styles.links} >Listem </NavLink>
-     </React.Fragment>
+              <React.Fragment>
+                <NavLink className="menu-item" to="/" activeClassName="active" style={styles.links} > <span style={styles.menuFirst}>Ana Sayfa</span> </NavLink>
+                <NavLink className="menu-item" to="/watchagain" activeClassName="active" style={styles.links}> Yeniden İzle </NavLink>
+                <NavLink className="menu-item" to="/Series" activeClassName="active" style={styles.links}> Diziler </NavLink>
+                <NavLink className="menu-item" to="/Films" activeClassName="active" style={styles.links}> Filmler </NavLink>
+                <NavLink className="menu-item" to="/Newpopular" activeClassName="active" style={styles.links}> Yeni ve Popüler </NavLink>
+                <NavLink className="menu-item" to="/mylist" activeClassName="active" style={styles.links} >Listem </NavLink>
+              </React.Fragment>
 
-     <React.Fragment>
-          <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-              <Badge  color="error">
-                <SearchIcon style = {{marginTop:7}} />
-              </Badge>
-            </IconButton>
-            <IconButton>
-              <span style = {{color:"white",fontSize:14,marginTop:6}}>Çocuk</span>
-              </IconButton>
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge style = {styles.badge} badgeContent={11} color="error">
-                <NotificationsIcon style = {styles.notifications} />
-              </Badge>
-            </IconButton>
-            <IconButton
-              size="large"
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >
-              <img alt = "auth" style = {styles.smiles} src = {props.account.image} />
-              <KeyboardArrowDownIcon style = {styles.IconDown}/>
+              <React.Fragment>
+                <Box sx={{ flexGrow: 1 }} />
+                <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                  <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+                    <Badge color="error">
+                      <SearchIcon style={{ marginTop: 7 }} />
+                    </Badge>
+                  </IconButton>
+                  <IconButton>
+                    <span style={{ color: "white", fontSize: 14, marginTop: 6 }}>Çocuk</span>
+                  </IconButton>
+                  <IconButton
+                    size="large"
+                    aria-label="show 17 new notifications"
+                    color="inherit"
+                  >
+                    <Badge style={styles.badge} badgeContent={11} color="error">
+                      <NotificationsIcon style={styles.notifications} />
+                    </Badge>
+                  </IconButton>
+                  <IconButton
+                  onMouseOver={handleHover} onMouseOut = {removeHover}
+                    size="large"
+                    edge="end"
+                    aria-label="account of current user"
+                    aria-haspopup="true"
+                    color="inherit"
+                  >
+                    <img  alt="auth" style={styles.smiles} src={props.account.image} />
+                    <KeyboardArrowDownIcon style={styles.IconDown} />
+                    {anchorEl ? <NavList account = {props.account} accounts = {props.accounts}/> : null}
 
-            </IconButton>
-          </Box>
-          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
-          </Box>
-          </React.Fragment>
-          </React.Fragment>
-     : null }
+                  </IconButton>
+                </Box>
+                <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+                  <IconButton
+                    size="large"
+                    aria-label="show more"
+                    aria-controls={mobileMenuId}
+                    aria-haspopup="true"
+                    onClick={handleMobileMenuOpen}
+                    color="inherit"
+                  >
+                    <MoreIcon />
+                  </IconButton>
+                </Box>
+              </React.Fragment>
+            </React.Fragment>
+            : null}
 
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
-      {renderMenu}
     </Box>
   );
 }

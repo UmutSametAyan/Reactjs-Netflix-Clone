@@ -10,9 +10,10 @@ export default function Home() {
         {movieType:"popularfilms",title:"Netlix'te Popüler"},
         {movieType:"2005",title:"2005 filmleri"},
     ];
+    
     return (
         <div className='Home'>
-            <Jumbotron/>
+            <Jumbotron data = {Movies.find(movie => movie.isPopular === "popular")} />
             <div> 
                 {movieSlideFilter.map(movieFilter =>{
                     return(
@@ -23,53 +24,6 @@ export default function Home() {
                     )
                 })}
             </div>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
         </div>
     )
 }

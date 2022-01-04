@@ -170,7 +170,7 @@
         "Language": "English",
         "Country": "United States, United Kingdom, Germany",
         "Awards": "7 wins & 29 nominations",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_SX300.jpg",
+        "Poster": "https://wallpaperaccess.com/full/6993439.png",
         "Ratings": [
             {
                 "Source": "Internet Movie Database",
@@ -230,7 +230,7 @@
         "imdbRating": "7.1",
         "imdbVotes": "268,608",
         "imdbID": "tt0298203",
-        "Type": "movie",
+        "Type": "series",
         "DVD": "18 Mar 2003",
         "BoxOffice": "$116,750,901",
         "Production": "N/A",
@@ -239,6 +239,7 @@
     },
     {
         "Title": "V for Vendetta",
+        "logo":"https://logosarchive.com/wp-content/uploads/2021/10/Squid-Game-logo.png",
         "Year": "2005",
         "Rated": "R",
         "Released": "17 Mar 2006",
@@ -249,10 +250,12 @@
         "Actors": "Hugo Weaving, Natalie Portman, Rupert Graves",
         "Plot": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of \"V,\" plots to overthrow it with the help of a young woman.",
         "DataType":"popularfilms",
+        "isPopular":"popular",
+        "movieText":"subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quosblanditiis tenetur",
         "Language": "English",
         "Country": "United States, United Kingdom, Germany",
         "Awards": "7 wins & 29 nominations",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_SX300.jpg",
+        "Poster": "https://wallpaperaccess.com/full/6993439.png",
         "Ratings": [
             {
                 "Source": "Internet Movie Database",
@@ -271,7 +274,51 @@
         "imdbRating": "8.1",
         "imdbVotes": "1,073,556",
         "imdbID": "tt0434409",
-        "Type": "movie",
+        "Type": "series",
+        "DVD": "01 Aug 2006",
+        "BoxOffice": "$70,511,035",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "V for Vendetta",
+        "logo":"https://logosarchive.com/wp-content/uploads/2021/10/Squid-Game-logo.png",
+        "Year": "2005",
+        "Rated": "R",
+        "Released": "17 Mar 2006",
+        "Runtime": "132 min",
+        "Genre": "Action, Drama, Sci-Fi",
+        "Director": "James McTeigue",
+        "Writer": "Lilly Wachowski, Lana Wachowski, David Lloyd",
+        "Actors": "Hugo Weaving, Natalie Portman, Rupert Graves",
+        "Plot": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of \"V,\" plots to overthrow it with the help of a young woman.",
+        "DataType":"2005",
+        "isPopular":"popular",
+        "movieText":"subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quosblanditiis tenetur",
+        "Language": "English",
+        "Country": "United States, United Kingdom, Germany",
+        "Awards": "7 wins & 29 nominations",
+        "Poster": "https://wallpaperaccess.com/full/6993439.png",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.1/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "73%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "62/100"
+            }
+        ],
+        "Metascore": "62",
+        "imdbRating": "8.1",
+        "imdbVotes": "1,073,556",
+        "imdbID": "tt0434409",
+        "Type": "series",
         "DVD": "01 Aug 2006",
         "BoxOffice": "$70,511,035",
         "Production": "N/A",
@@ -293,48 +340,7 @@
         "Language": "English",
         "Country": "United States, United Kingdom, Germany",
         "Awards": "7 wins & 29 nominations",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_SX300.jpg",
-        "Ratings": [
-            {
-                "Source": "Internet Movie Database",
-                "Value": "8.1/10"
-            },
-            {
-                "Source": "Rotten Tomatoes",
-                "Value": "73%"
-            },
-            {
-                "Source": "Metacritic",
-                "Value": "62/100"
-            }
-        ],
-        "Metascore": "62",
-        "imdbRating": "8.1",
-        "imdbVotes": "1,073,556",
-        "imdbID": "tt0434409",
-        "Type": "movie",
-        "DVD": "01 Aug 2006",
-        "BoxOffice": "$70,511,035",
-        "Production": "N/A",
-        "Website": "N/A",
-        "Response": "True"
-    },
-    {
-        "Title": "V for Vendetta",
-        "Year": "2005",
-        "Rated": "R",
-        "Released": "17 Mar 2006",
-        "Runtime": "132 min",
-        "Genre": "Action, Drama, Sci-Fi",
-        "Director": "James McTeigue",
-        "Writer": "Lilly Wachowski, Lana Wachowski, David Lloyd",
-        "Actors": "Hugo Weaving, Natalie Portman, Rupert Graves",
-        "Plot": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of \"V,\" plots to overthrow it with the help of a young woman.",
-        "DataType":"2005",
-        "Language": "English",
-        "Country": "United States, United Kingdom, Germany",
-        "Awards": "7 wins & 29 nominations",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_SX300.jpg",
+        "Poster": "https://wallpaperaccess.com/full/6993439.png",
         "Ratings": [
             {
                 "Source": "Internet Movie Database",
