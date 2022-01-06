@@ -1,12 +1,20 @@
 import React from 'react'
 
 export default function NavList(props) {
-
+const dataControl = () => {
+  const allAccounts = JSON.parse(localStorage.getItem('allAccounts'));
+  if(allAccounts){
+    return allAccounts.filter(currentAcc => currentAcc.name !== props.account.name);;
+  }
+  else {
+   return props.accounts.filter(currentAcc => currentAcc.name !== props.account.name);
+  }
+}
     return (
         <div>
            <div className='profile-bar'>
                       <ul className='list-ul'>
-                        {props.accounts.filter(currentAcc => currentAcc.name !== props.account.name).map(accs => {
+                        {dataControl().map(accs => {
                           return (
                             <div style={{display:"flex",alignItems:"center",gap:"0.5rem",paddingLeft:"10px",paddingTop:"10px"}}>
                               <img alt = "account icons" src={accs.picture} width="17%" />

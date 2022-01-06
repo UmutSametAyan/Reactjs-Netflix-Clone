@@ -14,6 +14,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import netLogo from '../netlogo.png'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import NavList from './NavList';
 
 
@@ -81,12 +82,10 @@ export default function PrimarySearchAppBar(props) {
 
   const handleHover = (event) => {
     setAnchorEl(true)
-    console.log(anchorEl)
   }
 
   const removeHover = () =>{
     setAnchorEl(false);
-    console.log(anchorEl)
   }
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
@@ -211,7 +210,7 @@ export default function PrimarySearchAppBar(props) {
                     color="inherit"
                   >
                     <img  alt="auth" style={styles.smiles} src={props.account.image} />
-                    <KeyboardArrowDownIcon style={styles.IconDown} />
+                   {anchorEl ? <KeyboardArrowDownIcon style={styles.IconDown} /> : <KeyboardArrowUpIcon style={styles.IconDown} /> } 
                     {anchorEl ? <NavList account = {props.account} accounts = {props.accounts}/> : null}
 
                   </IconButton>

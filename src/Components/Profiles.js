@@ -13,6 +13,16 @@ export default function Whoiswatching(props) {
     const addNewProfile = () => {
         props.newProfile(true);
     }
+
+    const dataControl = () => {
+        const allAccounts = JSON.parse(localStorage.getItem('allAccounts'));
+        if (allAccounts) {
+          return allAccounts;
+        }
+        else {
+          return props.accounts;
+        }
+    }
     return (
         <div className='who-watch-all'>
             <h2 className="who-watch-text">Kim İzliyor?</h2>
@@ -20,7 +30,7 @@ export default function Whoiswatching(props) {
             <br/>
 
             <div className='who-watch'>
-                {props.accounts.map(acc => {
+                {dataControl().map(acc => {
                     return (
                         <div>
                             <div onClick={() => handleAccountSelect(acc.name, acc.picture)}> <img className='acc-pic'  alt="accounts" src={acc.picture}></img> </div>

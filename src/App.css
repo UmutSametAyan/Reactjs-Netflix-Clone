@@ -79,6 +79,17 @@ body{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1300px){
+  .acc-pic-two{
+      border-radius: 6px;
+      height: 10.5vh !important;
+      cursor: pointer;
+   }
+   .inpts{
+       width: 270px !important;
+   }
+  }
+
 @media only screen and (max-width: 1200px){
   .acc-pic{
     border-radius: 6px;
@@ -86,6 +97,14 @@ body{
     cursor: pointer;
     object-fit: cover;
 }
+.acc-pic-two{
+    border-radius: 6px;
+    height: 10.5vh !important;
+    cursor: pointer;
+ }
+ .inpts{
+     width: 270px !important;
+ }
 }
 @media only screen and (max-width: 767px) {
     .menu-item {
@@ -124,7 +143,6 @@ body{
     border-radius: 6px;
     height: 16.5vh;
     cursor: pointer;
-    object-fit: cover;
  }
  .who-watch-text{
      text-align: center;
@@ -132,12 +150,12 @@ body{
      font-weight: 500;
      color:white;
  }
-.new-profile{
- width: 44%;
- margin: 0 auto;
- margin-top: 10%;
- padding: 20px;
-}
+ .new-profile{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 20px;
+ }
 
 .add-profile{
     display:flex;
