@@ -78,6 +78,19 @@ body{
     left:-50px;
     cursor: pointer;
 }
+@media only screen and (min-width:1900px) {
+   
+    .add-profile{
+        display:flex;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+        color: #4E4E4E;
+        padding: 2rem 3rem !important;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}
 
 @media only screen and (max-width: 1300px){
   .acc-pic-two{
@@ -96,6 +109,16 @@ body{
     height: 25vh !important;
     cursor: pointer;
     object-fit: cover;
+}
+.add-profile{
+    display:flex;
+    height: 25vh !important;
+    justify-content: center;
+    align-items: center;
+    color: #4E4E4E;
+    padding: 2rem 2.9rem !important;
+    border-radius: 6px;
+    cursor: pointer;
 }
 .acc-pic-two{
     border-radius: 6px;
@@ -163,7 +186,7 @@ body{
     justify-content: center;
     align-items: center;
     color: #4E4E4E;
-    padding: 10px 25px;
+    padding: 2rem 1.6rem;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -203,4 +226,7 @@ body{
 }
 .sec{
     padding-top: 12px;
+}
+.ptext{
+    margin-top: 12px;
 }
