@@ -34,7 +34,7 @@ export default function Whoiswatching(props) {
                     return (
                         <div>
                             <div onClick={() => handleAccountSelect(acc.name, acc.picture)}> <img className='acc-pic'  alt="accounts" src={acc.picture}></img> </div>
-                            <p class="who-text">{acc.name}</p>
+                            <p class="who-text">{acc.name}</p> 
                         </div>
                     )
                 })}
