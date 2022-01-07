@@ -80,7 +80,7 @@ export default function AddProfile(props) {
         main: {
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: "center",
+            justifyContent: "start",
             gap: "2rem",
             alignItems: "center",
             marginTop: "4%",
