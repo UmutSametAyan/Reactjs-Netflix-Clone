@@ -1,16 +1,19 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState,Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-import Mylist from './Components/Mylist';
-import ErrorPage from './Components/ErrorPage';
-import Watchagain from './Components/Watchagain';
-import Series from './Components/Series';
-import Films from './Components/Films';
-import Newpopular from './Components/Newpopular';
-import Whoiswatching from './Components/Whoiswatching';
+
 import Smiles from './smilesn.png'
+
+
+const Navbar = React.lazy(() => import('./Components/Navbar'));
+const Home = React.lazy(() => import('./Components/Home'));
+const Mylist = React.lazy(() => import('./Components/Mylist'));
+const ErrorPage = React.lazy(() => import('./Components/ErrorPage'));
+const Watchagain = React.lazy(() => import('./Components/Watchagain'));
+const Series = React.lazy(() => import('./Components/Series'));
+const Films = React.lazy(() => import('./Components/Films'));
+const Newpopular = React.lazy(() => import('./Components/Newpopular'));
+const Whoiswatching = React.lazy(() => import('./Components/Whoiswatching'));
 
 function App() {
 
@@ -35,8 +38,8 @@ function App() {
   return (
 
     <Router>
-
-      <Navbar accounts={accounts} account={account} />
+<Suspense fallback = {<p style = {{fontSize:"70px",color:"white"}}>Loading..</p>}>
+<Navbar accounts={accounts} account={account} />
       <Routes>
         <Route path="/" element={account.length !== 0 ? <Home /> : <Whoiswatching accounts={accounts} account={acc => setAccount(acc)} />} />
         <Route path="/mylist" element={<Mylist />} />
@@ -46,6 +49,8 @@ function App() {
         <Route path="/Newpopular" element={<Newpopular />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+</Suspense>
+ 
     </Router>
 
   );

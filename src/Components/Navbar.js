@@ -202,6 +202,7 @@ export default function PrimarySearchAppBar(props) {
                     </Badge>
                   </IconButton>
                   <IconButton
+                  className = "kenk"
                   onMouseOver={handleHover} onMouseOut = {removeHover}
                     size="large"
                     edge="end"
@@ -211,7 +212,7 @@ export default function PrimarySearchAppBar(props) {
                   >
                     <img  alt="auth" style={styles.smiles} src={props.account.image} />
                    {anchorEl ? <KeyboardArrowDownIcon style={styles.IconDown} /> : <KeyboardArrowUpIcon style={styles.IconDown} /> } 
-                    {anchorEl ? <NavList account = {props.account} accounts = {props.accounts}/> : null}
+                   <NavList account = {props.account} accounts = {props.accounts}/>
 
                   </IconButton>
                 </Box>

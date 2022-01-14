@@ -33,7 +33,8 @@ export default function Whoiswatching(props) {
                 {dataControl().map(acc => {
                     return (
                         <div>
-                            <div onClick={() => handleAccountSelect(acc.name, acc.picture)}> <img className='acc-pic'  alt="accounts" src={acc.picture}></img> </div>
+                            <div onClick={() => handleAccountSelect(acc.name, acc.picture)}> <img className='acc-pic'  alt="accounts" src={acc.picture}></img>
+                             </div>
                             <p class="who-text">{acc.name}</p> 
                         </div>
                     )
@@ -44,6 +45,9 @@ export default function Whoiswatching(props) {
                     </div>
                     <p class="who-text ptext">Profil Ekle</p>
                 </div>
+            </div>
+            <div class = "profile-manager">
+                <h2>Profil Yönetimi</h2>
             </div>
         </div>
     )
