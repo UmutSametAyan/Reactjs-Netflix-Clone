@@ -6,7 +6,7 @@ import Smiles from './smilesn.png'
 
 
 const Navbar = React.lazy(() => import('./Components/Navbar'));
-const Home = React.lazy(() => import('./Components/Home'));
+// const Home = React.lazy(() => import('./Components/Home'));
 const Mylist = React.lazy(() => import('./Components/Mylist'));
 const ErrorPage = React.lazy(() => import('./Components/ErrorPage'));
 const Watchagain = React.lazy(() => import('./Components/Watchagain'));
@@ -14,6 +14,7 @@ const Series = React.lazy(() => import('./Components/Series'));
 const Films = React.lazy(() => import('./Components/Films'));
 const Newpopular = React.lazy(() => import('./Components/Newpopular'));
 const Whoiswatching = React.lazy(() => import('./Components/Whoiswatching'));
+const HomePage = React.lazy(() => import('./Components/Homepage'))
 
 function App() {
 
@@ -41,7 +42,7 @@ function App() {
 <Suspense fallback = {<p style = {{fontSize:"70px",color:"white"}}>Loading..</p>}>
 <Navbar accounts={accounts} account={account} />
       <Routes>
-        <Route path="/" element={account.length !== 0 ? <Home /> : <Whoiswatching accounts={accounts} account={acc => setAccount(acc)} />} />
+        <Route path="/" element={account.length !== 0 ? <HomePage /> : <Whoiswatching accounts={accounts} account={acc => setAccount(acc)} />} />
         <Route path="/mylist" element={<Mylist />} />
         <Route path="/watchagain" element={<Watchagain />} />
         <Route path="/Series" element={<Series />} />

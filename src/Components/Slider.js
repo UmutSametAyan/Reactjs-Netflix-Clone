@@ -21,7 +21,7 @@ export default function Films(props) {
     return (
         <div>
 
-            <Carousel className={isOpen ? "full-width" : "half-width"} show={6} slide={2} transition={0.5}
+            <Carousel className={isOpen ? "full-width" : "half-width"} show={5.9} slide={2} transition={0.5}
                 leftArrow={<div ref={leftArrowRef} style={{ position: "relative" }}><ArrowBackIosIcon style={sizingMouseOver && mouseOver ? { display: "block" } : { display: "none" }} className="arrow-left" /></div>}
                 rightArrow={<div style={{ position: "relative" }}><ArrowForwardIosIcon onClick={arrowRightClick} onMouseOver={() => setMouseOver(true)} style={mouseOver ? { display: "block" } : { display: "none" }} className="arrow-right" /></div>}>
                 {props.dataProps.map(movie => {

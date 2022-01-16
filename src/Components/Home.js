@@ -2,20 +2,16 @@ import React from 'react'
 import Jumbotron from './Jumbotron'
 import Slider from './Slider'
 import Movies from '../JsonData/Movies.json'
-export default function Home() {
+export default function Home(props) {
     const nameStyles = {
         color: "white", fontFamily: "sans-serif", fontSize: "20px", marginLeft: "4%",marginTop:"1rem" 
     }
-    const movieSlideFilter = [
-        {movieType:"popularfilms",title:"Netlix'te Popüler"},
-        {movieType:"2005",title:"2005 filmleri"},
-    ];
-    
+
     return (
         <div className='Home'>
-            <Jumbotron data = {Movies.find(movie => movie.isPopular === "popular")} />
+            <Jumbotron data = {Movies.find(movie => movie.isPopular === props.jumbotronData)} />
             <div> 
-                {movieSlideFilter.map(movieFilter =>{
+                {props.movieData.map(movieFilter =>{
                     return(
                         <div>
                         <p style={nameStyles}> {movieFilter.title} </p>

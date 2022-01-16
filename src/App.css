@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    box-sizing:border-box;
+    box-sizing:border-box !important;
 }
 .main-jumbotron{
     background: url('https://leadergamer.com.tr/app/uploads/2019/08/Spider-Man-Far-From-Home.jpg');
@@ -82,60 +82,14 @@ body{
     left:-50px;
     cursor: pointer;
 }
-@media only screen and (min-width:1800px) {
-   
-    .add-profile{
-        display:flex;
-        height: 20vh;
-        justify-content: center;
-        align-items: center;
-        color: #4E4E4E;
-        padding: 2rem 3rem !important;
-        border-radius: 6px;
-        cursor: pointer;
-    }
-}
 
-@media only screen and (max-width: 1300px){
-  .acc-pic-two{
-      border-radius: 6px;
-      height: 10.5vh !important;
-      cursor: pointer;
-   }
-   .inpts{
-       width: 270px !important;
-   }
-  }
+
+
 
 .kenk:hover  .profile-bar{
     display: block;
 }
-@media only screen and (max-width: 1200px){
-  .acc-pic{
-    border-radius: 6px;
-    height: 25vh !important;
-    cursor: pointer;
-    object-fit: cover;
-}
-.add-profile{
-    display:flex;
-    height: 25vh !important;
-    justify-content: center;
-    align-items: center;
-    color: #4E4E4E;
-    padding: 2rem 2.9rem !important;
-    border-radius: 6px;
-    cursor: pointer;
-}
-.acc-pic-two{
-    border-radius: 6px;
-    height: 10.5vh !important;
-    cursor: pointer;
- }
- .inpts{
-     width: 270px !important;
- }
-}
+
 @media only screen and (max-width: 767px) {
     .menu-item {
       display: none !important;
@@ -147,8 +101,33 @@ body{
     .logo{
         margin-top:1rem !important;
     }
+   
+       .inpts{
+           width: 175px !important;
+       }
+       .acc-pic-two{
+        border-radius: 6px;
+        width:80% !important;
+        margin-left: 20px;
+        margin-top: 10px;
+     }
+     .new-profile{
+        width: 100% !important;
+        margin: 0 auto;
+        margin-top: 10%;
+        padding: 20px;
+       }
+       .new-profile-md{
+        width: 100% !important;
+        margin: 0 auto ;
+    }
+    .style-main{
+        justify-content: center !important;
+    }
+    .style-btn{
+        justify-content: center;
+    }
   }
-
 .menu-item {
     color:#e5e5e5;
   }
@@ -171,8 +150,7 @@ body{
  }
  .acc-pic-two{
     border-radius: 6px;
-    height: 16.5vh;
-    cursor: pointer;
+    width: 120px;
  }
  .who-watch-text{
      text-align: center;
@@ -187,19 +165,8 @@ body{
   padding: 20px;
  }
 
-.add-profile{
-    display:flex;
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
-    color: #4E4E4E;
-    padding: 2rem 1.6rem;
-    border-radius: 6px;
-    cursor: pointer;
-}
-.add-profile:hover{
-    background-color: #E5E5E5;
-}
+
+
 .add-icon{
     font-size: 6rem !important;
 }
@@ -229,6 +196,7 @@ body{
     margin-top: 5.3%;
     border: 1px solid #808080;
     width: 13.5%;
+    min-width: 200px;
     color:#808080;
     font-size: 0.7rem;
     font-weight: 500;
@@ -255,7 +223,7 @@ body{
     padding-top: 12px;
 }
 .ptext{
-    margin-top: 12px;
+    margin-top: 30px;
 }
 .nav-link{
     text-decoration: none;
@@ -276,4 +244,23 @@ body{
 .slider-last{
     align-self: flex-end !important;
     flex: 1;
+}
+.main-divs{
+    width:155px;
+    height:150px;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.add-div{
+    padding: 28px;
+    color: #4E4E4E;
+}
+.add-div:hover{
+    background-color: #E5E5E5;
+}
+.new-profile-md{
+    width: 65%;
+    margin: 0 auto;
 }

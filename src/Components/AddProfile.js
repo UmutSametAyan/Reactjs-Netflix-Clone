@@ -72,10 +72,23 @@ export default function AddProfile(props) {
             border: "none",
             outline: "none",
         },
+        chck2: {
+            width: "30px",
+            height: "30px",
+            border: "none",
+            outline: "none",
+            marginTop:"-25px"
+        },
         child: {
             color: "white",
             fontSize: "1.3rem",
             marginLeft: "-25px",
+        },
+        child2: {
+            color: "white",
+            fontSize: "1.3rem",
+            marginLeft: "-25px",
+            marginTop:"-2.5%"
         },
         main: {
             display: "flex",
@@ -107,7 +120,7 @@ export default function AddProfile(props) {
     }
     return (
         <div className='new-profile'>
-            <div style={{ width: "60%", margin: "0 auto" }}>
+            <div className='new-profile-md'>
                 <div>
                     <h2 style={styles.heading}>Profil Ekle</h2>
                     <br />
@@ -115,7 +128,7 @@ export default function AddProfile(props) {
                     <br />
                     <div style={styles.hr}> </div>
                 </div>
-                <div style={styles.main}>
+                <div className='style-main' style={styles.main}>
                     <div>
                         <img className='acc-pic-two' alt="accounts" src={Smiles} />
                     </div>
@@ -126,16 +139,17 @@ export default function AddProfile(props) {
                             style={styles.input}
                             placeholder={"Adı"}
                         />
-                      {isDisable ? <div style={styles.please}> Lütfen bir ad girin </div> : null}  
+                        {isDisable ? <div style={styles.please}> Lütfen bir ad girin </div> : null}
 
                     </div>
                     <div style={styles.enters3}>
-                        <input style={styles.chck} type="checkbox" />
+                        <input style={!isDisable ? styles.chck : styles.chck2} type="checkbox" />
                     </div>
-                    <p style={styles.child}>Çocuk</p>
+          
+                    <p style = {!isDisable ? styles.child : styles.child2}>Çocuk</p>
                 </div>
                 <div style={styles.hr}></div>
-                <div style={styles.btns}>
+                <div className='style-btn' style={styles.btns}>
                     <Button onClick={() => handleNewAccount(acc, Smiles)} style={styles.btn} variant="contained">Devam Et</Button>
                     <Button onClick={handleBack} style={styles.btnTwo} variant="outlined">İptal</Button>
                 </div>

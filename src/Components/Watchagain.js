@@ -1,67 +1,16 @@
 import React from 'react'
 import '../App.css';
+import Home from './Home'
 export default function Watchagain() {
 
-    const classes = {
-        title:{
-            fontSize:47,
-            color:"white",
-            fontFamily:"sans-serif",
-            fontWeight:"bold",
-            marginLeft:60,
-            marginTop:10
-        },
-    }
+
+    const watchAgainMovieFilter = [
+        {movieType:"kenk",title:"Netlix'te Popüler"},
+        {movieType:"2005",title:"2005 filmleri"},
+    ];
     return (
-        <div>
-            <div style = {classes.title}>Yeniden İzle</div>
-            <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
-         <p>asdasdasd</p>
+       <div>
+            <Home movieData = {watchAgainMovieFilter} jumbotronData = "watchagain" />
         </div>
     )
 }
